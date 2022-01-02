@@ -1,0 +1,76 @@
+.slider {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+.slider .slider_container {
+  position: relative;
+  width: 500%;
+  left: 0;
+  animation: 20s slide infinite;
+}
+.slider .slider_container img {
+  width: 20%;
+  height: 700px;
+  float: left;
+  object-fit: cover;
+}
+.slider .slider_message {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%);
+  width: 400px;
+  height: 250px;
+  padding: 100px;
+  /*background-color: rgba(44, 48, 54, 0.95);*/
+  background-color: rgba(80, 200, 120, 0.9);
+}
+.slider .slider_message h2 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 2px solid white;
+}
+.slider .slider_message p {
+  padding-top: 30px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  font-family: "Questrial", sans-serif;
+}
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
